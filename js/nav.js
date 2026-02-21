@@ -1,10 +1,8 @@
 /* ── NAV SCROLL ── */
 const nav = document.getElementById('nav');
-const bar = document.getElementById('stickyBar');
 
 window.addEventListener('scroll', () => {
   nav.classList.toggle('scrolled', window.scrollY > 50);
-  bar.classList.toggle('up', window.scrollY > 600);
 });
 
 /* ── MOBILE MENU ── */
