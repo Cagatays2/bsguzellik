@@ -70,7 +70,8 @@ button { font:inherit; cursor:none; border:none; background:none; }
 .btn span { position:relative; z-index:1; }
 
 .btn-gold { background:var(--gold); color:#fff; }
-.btn-gold::before { background:var(--gold-dk); }
+.btn-gold::before { background:#fff; }
+.btn-gold:hover { color:var(--gold); }
 
 .btn-ghost { border:1.5px solid var(--text); color:var(--text); }
 .btn-ghost::before { background:var(--text); }
