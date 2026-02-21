@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tüm Hizmetler | Buket Sağır Güzellik Merkezi</title>
+  <meta name="description" content="Buket Sağır Güzellik Merkezi'nin tüm güzellik hizmetleri. Cilt bakımı, kalıcı makyaj, lazer epilasyon, kaş kirpik hizmetleri ve daha fazlası.">
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,700;0,900;1,700;1,900&family=Cormorant+Garamond:ital,wght@0,400;0,500;1,400;1,500&family=DM+Sans:opsz,wght@9..40,300;9..40,400;9..40,500&display=swap" rel="stylesheet">
+
+  <!-- Shared styles -->
+  <link rel="stylesheet" href="css/tokens.css">
+  <link rel="stylesheet" href="css/cursor.css">
+  <link rel="stylesheet" href="css/nav.css">
+  <link rel="stylesheet" href="css/footer.css">
+  <link rel="stylesheet" href="css/responsive.css">
+
+  <!-- Page styles -->
+  <link rel="stylesheet" href="css/hizmetler.css">
+</head>
+<body>
+
+<!-- ── CURSOR ── -->
+<div id="cur-dot"></div>
+<div id="cur-ring"></div>
+
+<!-- ── NAV ── -->
+<nav id="nav">
+  <div class="nav-in">
+    <a href="index.html" class="nav-logo">
+      <div class="logo-em">B</div>
+      <div class="logo-tx">
+        <div class="logo-name">Buket Sağır</div>
+        <div class="logo-sub">Güzellik Merkezi</div>
+      </div>
+    </a>
+
+    <ul class="nav-ul">
+      <li><a href="index.html#hizmetler">Hizmetler</a></li>
+      <li><a href="index.html#hakkimizda">Hakkımızda</a></li>
+      <li><a href="index.html#yorumlar">Yorumlar</a></li>
+      <li><a href="index.html#galeri">Galeri</a></li>
+      <li><a href="index.html#iletisim">İletişim</a></li>
+    </ul>
+
+    <div class="nav-cta-desk">
+      <a href="index.html#iletisim" class="btn btn-gold"><span>Randevu Al</span></a>
+    </div>
+
+    <button class="ham" id="ham" aria-label="Menü">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</nav>
+
+<!-- ── MOBILE MENU ── -->
+<div class="mob-menu" id="mob">
+  <a href="index.html#hizmetler"  onclick="closeMenu()">Hizmetler</a>
+  <a href="index.html#hakkimizda" onclick="closeMenu()">Hakkımızda</a>
+  <a href="index.html#yorumlar"   onclick="closeMenu()">Yorumlar</a>
+  <a href="index.html#galeri"     onclick="closeMenu()">Galeri</a>
+  <a href="index.html#iletisim"   onclick="closeMenu()">İletişim</a>
+  <a href="index.html#iletisim" class="mob-cta" onclick="closeMenu()">Randevu Al →</a>
+</div>
+
+<!-- ── PAGE HERO ── -->
+<section class="hz-hero">
+  <div class="hz-hero-glow"></div>
+  <div class="wrap">
+    <a href="index.html" class="hz-back rv">
+      <span class="hz-back-arrow">←</span> Ana Sayfa
+    </a>
+    <div style="height:32px;"></div>
+    <div class="hz-eyebrow rv d1">
+      <i></i> Buket Sağır Güzellik Merkezi <i></i>
+    </div>
+    <h1 class="hz-h1 rv d2">
+      Tüm <em>Güzellik</em><br>Hizmetlerimiz
+    </h1>
+    <p class="hz-sub rv d3">
+      Profesyonel güzellik hizmetlerimizle kendinizi şımartın. Size özel bakım seçeneklerimizle güzelliğinizi ön plana çıkarıyoruz.
+    </p>
+  </div>
+</section>
+
+<!-- ── SERVICES BODY ── -->
+<div class="hz-body">
+  <div class="wrap">
+
+    <!-- Category 1: Cilt & Güzellik Bakımları -->
+    <div class="hz-category">
+      <div class="hz-cat-hd rv">
+        <span class="hz-cat-ico">🌸</span>
+        <h2 class="hz-cat-title">Cilt &amp; <em>Güzellik Bakımları</em></h2>
+        <span class="hz-cat-count">4 Hizmet</span>
+      </div>
+
+      <div class="hz-grid">
+        <div class="hz-card rv">
+          <div class="hz-card-ico">🌸</div>
+          <h3 class="hz-card-name">Cilt Bakımı</h3>
+          <p class="hz-card-desc">Derinlemesine temizlik ve nemlendirme işlemleriyle cildinizi arındırıyor, doğal parlaklığını geri kazandırıyoruz.</p>
+        </div>
+
+        <div class="hz-card rv d1">
+          <div class="hz-card-ico">⚕️</div>
+          <h3 class="hz-card-name">Medikal Cilt Bakımı</h3>
+          <p class="hz-card-desc">Özel teknikler ve profesyonel ürünlerle uygulanan medikal düzeyde cilt bakımı. Her cilt tipine özel protokoller.</p>
+        </div>
+
+        <div class="hz-card rv d2">
+          <div class="hz-card-ico">✨</div>
+          <h3 class="hz-card-name">Dermapen</h3>
+          <p class="hz-card-desc">Mikro iğneleme teknolojisiyle cilt yenileme ve kırışıklık azaltma. Kolajen üretimini uyararak daha genç ve pürüzsüz bir cilt.</p>
+        </div>
+
+        <div class="hz-card rv d3">
+          <div class="hz-card-ico">💆</div>
+          <h3 class="hz-card-name">Çatlak Tedavisi</h3>
+          <p class="hz-card-desc">Ciltteki çatlak görünümünü etkili şekilde azaltan özel tedavi protokolleri. Pürüzsüz ve sağlıklı görünüm için.</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Category 2: Kalıcı Makyaj & Kaş Kirpik -->
+    <div class="hz-category">
+      <div class="hz-cat-hd rv">
+        <span class="hz-cat-ico">💄</span>
+        <h2 class="hz-cat-title">Kalıcı Makyaj &amp; <em>Kaş Kirpik</em></h2>
+        <span class="hz-cat-count">5 Hizmet</span>
+      </div>
+
+      <div class="hz-grid">
+        <div class="hz-card rv">
+          <div class="hz-card-ico">👁️</div>
+          <h3 class="hz-card-name">Kaş Lifting</h3>
+          <p class="hz-card-desc">Kaşlarınızı şekillendirerek doğal ve asılı bir görünüm kazandırıyoruz. Çekim etkisiyle daha genç bir ifade.</p>
+        </div>
+
+        <div class="hz-card rv d1">
+          <div class="hz-card-ico">💛</div>
+          <h3 class="hz-card-name">Kaş Vitamini</h3>
+          <p class="hz-card-desc">Kaş teli dökülmesini önleyen ve sağlıklı, dolgun kaşlar için uygulanan özel bakım ve beslenme protokolü.</p>
+        </div>
+
+        <div class="hz-card rv d2">
+          <div class="hz-card-ico">✍️</div>
+          <h3 class="hz-card-name">Kalıcı Kaşlar</h3>
+          <p class="hz-card-desc">Microblading ve pudralama teknikleriyle yüz hatlarınıza uygun, doğal görünümlü kalıcı kaş tasarımı.</p>
+        </div>
+
+        <div class="hz-card rv d3">
+          <div class="hz-card-ico">🌙</div>
+          <h3 class="hz-card-name">Kirpik Lifting</h3>
+          <p class="hz-card-desc">Doğal kirpiklerinize kıvrım ve hacim kazandıran kirpik lifting uygulaması. Maskara gerektirmeden çarpıcı bir bakış.</p>
+        </div>
+
+        <div class="hz-card rv d4">
+          <div class="hz-card-ico">💋</div>
+          <h3 class="hz-card-name">Dudak Renklendirme &amp; Lipliner</h3>
+          <p class="hz-card-desc">Kalıcı dudak şekillendirme ve renklendirme uygulamaları. Doğal görünümlü, uzun ömürlü sonuçlar.</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Category 3: Bölgesel Zayıflama & Epilasyon -->
+    <div class="hz-category">
+      <div class="hz-cat-hd rv">
+        <span class="hz-cat-ico">❄️</span>
+        <h2 class="hz-cat-title">Bölgesel Zayıflama &amp; <em>Epilasyon</em></h2>
+        <span class="hz-cat-count">3 Hizmet</span>
+      </div>
+
+      <div class="hz-grid">
+        <div class="hz-card rv">
+          <div class="hz-card-ico">❄️</div>
+          <h3 class="hz-card-name">Buz Lazer</h3>
+          <p class="hz-card-desc">En son buz lazer teknolojisiyle acısız ve kalıcı epilasyon. Tüm cilt tiplerine uygun, güvenli ve etkili uygulama.</p>
+        </div>
+
+        <div class="hz-card rv d1">
+          <div class="hz-card-ico">💪</div>
+          <h3 class="hz-card-name">G5 Masajı</h3>
+          <p class="hz-card-desc">Mekanik masaj cihazıyla bölgesel incelme ve selülit tedavisi. Kan dolaşımını hızlandırarak görünür incelme sağlar.</p>
+        </div>
+
+        <div class="hz-card rv d2">
+          <div class="hz-card-ico">🌊</div>
+          <h3 class="hz-card-name">Selülit Tedavisi</h3>
+          <p class="hz-card-desc">Portakal kabuğu görünümünü azaltan özel selülit tedavi protokolleri. Pürüzsüz ve sıkı bir cilt için etkili çözümler.</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- CTA strip -->
+    <div class="hz-cta rv">
+      <div>
+        <div class="hz-cta-txt">Randevu almak <em>ister misiniz?</em></div>
+        <div class="hz-cta-sub">Uzmanlarımız size en uygun hizmet seçeneğini önersin.</div>
+      </div>
+      <a href="index.html#iletisim" class="btn btn-gold"><span>Randevu Al</span></a>
+    </div>
+
+  </div>
+</div>
+
+<!-- ── FOOTER ── -->
+<footer>
+  <div class="wrap">
+    <div class="ft-top">
+      <div>
+        <div class="ft-logo">
+          <div class="ft-logo-em">B</div>
+          <div class="ft-logo-name">Buket Sağır</div>
+        </div>
+        <p class="ft-desc">İstanbul Ataşehir'de 8 yılı aşkın süredir güzellik hizmeti sunuyoruz. Profesyonel ekibimiz ve premium ürünlerimizle yanınızdayız.</p>
+        <div class="ft-soc">
+          <a href="#" aria-label="Instagram">📷</a>
+          <a href="#" aria-label="Facebook">📘</a>
+          <a href="#" aria-label="WhatsApp">💬</a>
+        </div>
+      </div>
+
+      <div>
+        <div class="ft-col-ttl">Hizmetler</div>
+        <ul class="ft-ul">
+          <li><a href="hizmetler.html">Cilt Bakımı</a></li>
+          <li><a href="hizmetler.html">Lazer Epilasyon</a></li>
+          <li><a href="hizmetler.html">Kaş Microblading</a></li>
+          <li><a href="hizmetler.html">Nail Art &amp; Manikür</a></li>
+          <li><a href="hizmetler.html">Tüm Hizmetler →</a></li>
+        </ul>
+      </div>
+
+      <div>
+        <div class="ft-col-ttl">Hızlı Erişim</div>
+        <ul class="ft-ul">
+          <li><a href="index.html">Ana Sayfa</a></li>
+          <li><a href="index.html#hakkimizda">Hakkımızda</a></li>
+          <li><a href="index.html#yorumlar">Yorumlar</a></li>
+          <li><a href="index.html#galeri">Galeri</a></li>
+          <li><a href="index.html#iletisim">İletişim</a></li>
+        </ul>
+      </div>
+
+      <div>
+        <div class="ft-col-ttl">İletişim</div>
+        <div class="ft-ci"><span class="ft-ci-ico">📞</span><span class="ft-ci-tx">+90 532 000 00 00</span></div>
+        <div class="ft-ci"><span class="ft-ci-ico">✉️</span><span class="ft-ci-tx">info@buketsagirguzellik.com</span></div>
+        <div class="ft-ci"><span class="ft-ci-ico">📍</span><span class="ft-ci-tx">Ataşehir, İstanbul</span></div>
+        <div class="ft-ci"><span class="ft-ci-ico">🕐</span><span class="ft-ci-tx">Hft–Cmt: 09:00–20:00</span></div>
+      </div>
+    </div>
+
+    <div class="ft-bot">
+      <span>© 2025 Buket Sağır Güzellik Merkezi · Tüm hakları saklıdır.</span>
+      <span>Made with ♥ in İstanbul</span>
+    </div>
+  </div>
+</footer>
+
+<!-- Scripts -->
+<script src="js/cursor.js" defer></script>
+<script src="js/nav.js" defer></script>
+<script src="js/reveal.js" defer></script>
+
+</body>
+</html>

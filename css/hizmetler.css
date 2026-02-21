@@ -1,0 +1,136 @@
+/* ============================================================
+   HIZMETLER PAGE — full services listing
+   ============================================================ */
+
+/* Page hero */
+.hz-hero {
+  padding:160px 0 90px;
+  background:linear-gradient(135deg, #fff 0%, var(--off-white) 60%, rgba(249,221,214,.4) 100%);
+  position:relative; overflow:hidden;
+}
+.hz-hero-glow {
+  position:absolute; inset:0; pointer-events:none;
+  background:
+    radial-gradient(ellipse 55% 60% at 80% 50%, rgba(232,131,109,.14) 0%, transparent 60%),
+    radial-gradient(ellipse 40% 45% at 10% 80%, rgba(232,131,109,.08) 0%, transparent 55%);
+}
+.hz-eyebrow {
+  display:inline-flex; align-items:center; gap:12px;
+  font-size:10px; font-weight:500; letter-spacing:.25em;
+  text-transform:uppercase; color:var(--gold); margin-bottom:24px;
+}
+.hz-eyebrow i { width:4px; height:4px; border-radius:50%; background:var(--gold); display:block; font-style:normal; }
+.hz-h1 {
+  font-family:var(--f-disp);
+  font-size:clamp(48px,6.5vw,88px);
+  font-weight:900; line-height:.97;
+  color:var(--text); letter-spacing:-.03em;
+  margin-bottom:24px;
+}
+.hz-h1 em { font-style:italic; color:var(--gold); }
+.hz-sub {
+  font-size:15px; line-height:1.75; color:var(--muted);
+  max-width:520px; margin-bottom:40px;
+}
+.hz-back {
+  display:inline-flex; align-items:center; gap:10px;
+  font-size:11px; font-weight:500; letter-spacing:.14em;
+  text-transform:uppercase; color:var(--muted);
+  transition:color .25s;
+}
+.hz-back:hover { color:var(--gold); }
+.hz-back-arrow { font-size:14px; }
+
+/* Category sections */
+.hz-body { padding:90px 0 110px; background:var(--off-white); }
+
+.hz-category { margin-bottom:80px; }
+.hz-category:last-child { margin-bottom:0; }
+
+.hz-cat-hd {
+  display:flex; align-items:center; gap:20px;
+  margin-bottom:36px; padding-bottom:20px;
+  border-bottom:1.5px solid var(--text);
+}
+.hz-cat-ico { font-size:26px; }
+.hz-cat-title {
+  font-family:var(--f-disp); font-size:clamp(22px,2.8vw,34px);
+  font-weight:900; color:var(--text); letter-spacing:-.02em;
+}
+.hz-cat-title em { font-style:italic; color:var(--gold); }
+.hz-cat-count {
+  margin-left:auto; font-size:10px; font-weight:500;
+  letter-spacing:.2em; text-transform:uppercase;
+  color:var(--muted); white-space:nowrap;
+}
+
+/* Service cards grid */
+.hz-grid {
+  display:grid; grid-template-columns:repeat(4,1fr);
+  gap:14px;
+}
+
+.hz-card {
+  background:#fff; padding:36px 28px 30px;
+  border:1.5px solid var(--text);
+  display:flex; flex-direction:column;
+  position:relative; overflow:hidden;
+  transition:color .45s var(--ease);
+}
+.hz-card::before {
+  content:''; position:absolute; inset:0;
+  background:var(--gold);
+  transform:translateY(100%);
+  transition:transform .48s var(--ease);
+}
+.hz-card:hover::before { transform:translateY(0); }
+.hz-card > * { position:relative; z-index:1; }
+
+.hz-card-ico {
+  font-size:22px; margin-bottom:18px;
+  width:48px; height:48px; border-radius:50%;
+  border:1px solid var(--border);
+  display:flex; align-items:center; justify-content:center;
+  transition:border-color .4s;
+}
+.hz-card:hover .hz-card-ico { border-color:rgba(255,255,255,.2); }
+
+.hz-card-name {
+  font-family:var(--f-disp); font-size:18px; font-weight:700;
+  color:var(--text); line-height:1.2; margin-bottom:10px;
+  transition:color .4s;
+}
+.hz-card:hover .hz-card-name { color:#fff; }
+
+.hz-card-desc {
+  font-size:13px; line-height:1.68; color:var(--muted);
+  flex:1; transition:color .4s;
+}
+.hz-card:hover .hz-card-desc { color:rgba(255,255,255,.6); }
+
+/* Bottom CTA strip */
+.hz-cta {
+  margin-top:80px; padding:56px 64px;
+  background:var(--black);
+  display:flex; align-items:center; justify-content:space-between;
+  gap:40px;
+}
+.hz-cta-txt {
+  font-family:var(--f-disp); font-size:clamp(22px,2.6vw,34px);
+  font-weight:900; color:#fff; letter-spacing:-.02em;
+}
+.hz-cta-txt em { font-style:italic; color:var(--gold); }
+.hz-cta-sub { font-size:13px; color:rgba(255,255,255,.38); margin-top:6px; }
+
+/* Responsive */
+@media (max-width:1100px) {
+  .hz-grid { grid-template-columns:repeat(2,1fr); }
+}
+@media (max-width:768px) {
+  .hz-hero  { padding:130px 0 64px; }
+  .hz-grid  { grid-template-columns:1fr; }
+  .hz-body  { padding:60px 0 80px; }
+  .hz-category { margin-bottom:56px; }
+  .hz-cta   { flex-direction:column; align-items:flex-start; padding:36px 28px; }
+  .hz-cat-count { display:none; }
+}

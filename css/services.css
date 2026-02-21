@@ -3,6 +3,34 @@
    ============================================================ */
 .services { padding:110px 0; background:var(--off-white); }
 
+/* "Ve daha fazlası" link below the grid */
+.svc-more {
+  text-align:center; margin-top:52px;
+}
+.svc-more-link {
+  display:inline-flex; align-items:center; gap:14px;
+  font-family:var(--f-sans); font-size:12px; font-weight:500;
+  letter-spacing:.18em; text-transform:uppercase;
+  color:var(--text); border-bottom:1.5px solid var(--text);
+  padding-bottom:4px;
+  transition:color .25s var(--ease), border-color .25s var(--ease);
+}
+.svc-more-link:hover { color:var(--gold); border-color:var(--gold); }
+.svc-more-arrow {
+  display:inline-block; width:28px; height:1px;
+  background:var(--text); position:relative;
+  transition:width .28s var(--ease), background .25s;
+}
+.svc-more-arrow::after {
+  content:''; position:absolute; right:0; top:-3px;
+  width:6px; height:6px;
+  border-right:1.5px solid var(--text); border-top:1.5px solid var(--text);
+  transform:rotate(45deg);
+  transition:border-color .25s;
+}
+.svc-more-link:hover .svc-more-arrow { width:40px; background:var(--gold); }
+.svc-more-link:hover .svc-more-arrow::after { border-color:var(--gold); }
+
 .svc-hd {
   display:flex; align-items:flex-end;
   justify-content:space-between; gap:40px;
