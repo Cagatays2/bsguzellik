@@ -1,0 +1,80 @@
+/* ============================================================
+   TOKENS & RESET
+   ============================================================ */
+:root {
+  --black:      #0A0806;
+  --off-white:  #FEF8F6;      /* barely-pink page bg      */
+  --warm-white: #FFFFFF;
+  --gold:       #E8836D;      /* main accent: salmon pink */
+  --gold-lt:    #F9DDD6;      /* light blush              */
+  --gold-dk:    #C9A86C;      /* secondary: real gold     */
+  --text:       #1C1512;
+  --muted:      #8A7F78;
+  --border:     rgba(232,131,109,.16);
+  --f-disp:     'Playfair Display', Georgia, serif;
+  --f-ser:      'Cormorant Garamond', Georgia, serif;
+  --f-sans:     'DM Sans', system-ui, sans-serif;
+  --ease:       cubic-bezier(.25,.46,.45,.94);
+  --nav-h:      76px;
+}
+
+*,*::before,*::after { box-sizing:border-box; margin:0; padding:0; }
+html { scroll-behavior:smooth; font-size:16px; }
+body { font-family:var(--f-sans); background:var(--off-white); color:var(--text); overflow-x:hidden; cursor:none; }
+img  { display:block; max-width:100%; }
+a    { text-decoration:none; color:inherit; }
+button { font:inherit; cursor:none; border:none; background:none; }
+::-webkit-scrollbar { width:4px; }
+::-webkit-scrollbar-track { background:var(--off-white); }
+::-webkit-scrollbar-thumb { background:var(--gold); border-radius:2px; }
+
+/* ============================================================
+   UTILITY
+   ============================================================ */
+.wrap { max-width:1320px; margin:0 auto; padding:0 48px; }
+
+.label {
+  display:inline-flex; align-items:center; gap:10px;
+  font-size:10px; font-weight:500; letter-spacing:.22em;
+  text-transform:uppercase; color:var(--gold);
+}
+.label::before { content:''; display:block; width:28px; height:1px; background:var(--gold); }
+
+/* Scroll reveal */
+.rv {
+  opacity:0; transform:translateY(36px);
+  transition:opacity .75s var(--ease), transform .75s var(--ease);
+}
+.rv.on { opacity:1; transform:none; }
+.rv.d1 { transition-delay:.10s; }
+.rv.d2 { transition-delay:.20s; }
+.rv.d3 { transition-delay:.30s; }
+.rv.d4 { transition-delay:.40s; }
+.rv.d5 { transition-delay:.50s; }
+
+/* Buttons */
+.btn {
+  display:inline-flex; align-items:center; gap:10px;
+  padding:13px 30px;
+  font-family:var(--f-sans); font-size:11px; font-weight:500;
+  letter-spacing:.14em; text-transform:uppercase;
+  border-radius:2px; position:relative; overflow:hidden;
+  transition:color .28s var(--ease);
+}
+.btn::before {
+  content:''; position:absolute; inset:0;
+  transform:translateX(-100%);
+  transition:transform .32s var(--ease);
+}
+.btn:hover::before { transform:translateX(0); }
+.btn span { position:relative; z-index:1; }
+
+.btn-gold { background:var(--gold); color:#fff; }
+.btn-gold::before { background:var(--gold-dk); }
+
+.btn-ghost { border:1.5px solid var(--text); color:var(--text); }
+.btn-ghost::before { background:var(--text); }
+.btn-ghost:hover { color:#fff; }
+
+.btn-dark { background:var(--black); color:#fff; }
+.btn-dark::before { background:var(--gold); }

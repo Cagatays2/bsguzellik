@@ -1,0 +1,544 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Buket Sağır Güzellik Merkezi | Ataşehir, İstanbul</title>
+  <meta name="description" content="İstanbul Ataşehir'de premium güzellik merkezi. Lazer epilasyon, cilt bakımı, microblading ve daha fazlası. 8+ yıllık deneyim, sertifikalı uzmanlar.">
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,700;0,900;1,700;1,900&family=Cormorant+Garamond:ital,wght@0,400;0,500;1,400;1,500&family=DM+Sans:opsz,wght@9..40,300;9..40,400;9..40,500&display=swap" rel="stylesheet">
+
+  <!-- Styles -->
+  <link rel="stylesheet" href="css/tokens.css">
+  <link rel="stylesheet" href="css/cursor.css">
+  <link rel="stylesheet" href="css/nav.css">
+  <link rel="stylesheet" href="css/hero.css">
+  <link rel="stylesheet" href="css/services.css">
+  <link rel="stylesheet" href="css/about.css">
+  <link rel="stylesheet" href="css/process.css">
+  <link rel="stylesheet" href="css/testimonials.css">
+  <link rel="stylesheet" href="css/gallery.css">
+  <link rel="stylesheet" href="css/contact.css">
+  <link rel="stylesheet" href="css/footer.css">
+  <link rel="stylesheet" href="css/responsive.css">
+</head>
+<body>
+
+<!-- ── CURSOR ── -->
+<div id="cur-dot"></div>
+<div id="cur-ring"></div>
+
+<!-- ── NAV ── -->
+<nav id="nav">
+  <div class="nav-in">
+    <a href="#" class="nav-logo">
+      <div class="logo-em">B</div>
+      <div class="logo-tx">
+        <div class="logo-name">Buket Sağır</div>
+        <div class="logo-sub">Güzellik Merkezi</div>
+      </div>
+    </a>
+
+    <ul class="nav-ul">
+      <li><a href="#hizmetler">Hizmetler</a></li>
+      <li><a href="#hakkimizda">Hakkımızda</a></li>
+      <li><a href="#yorumlar">Yorumlar</a></li>
+      <li><a href="#galeri">Galeri</a></li>
+      <li><a href="#iletisim">İletişim</a></li>
+    </ul>
+
+    <div class="nav-cta-desk">
+      <a href="#iletisim" class="btn btn-gold"><span>Randevu Al</span></a>
+    </div>
+
+    <button class="ham" id="ham" aria-label="Menü">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</nav>
+
+<!-- ── MOBILE MENU ── -->
+<div class="mob-menu" id="mob">
+  <a href="#hizmetler"  onclick="closeMenu()">Hizmetler</a>
+  <a href="#hakkimizda" onclick="closeMenu()">Hakkımızda</a>
+  <a href="#yorumlar"   onclick="closeMenu()">Yorumlar</a>
+  <a href="#galeri"     onclick="closeMenu()">Galeri</a>
+  <a href="#iletisim"   onclick="closeMenu()">İletişim</a>
+  <a href="#iletisim" class="mob-cta" onclick="closeMenu()">Randevu Al →</a>
+</div>
+
+<!-- ── HERO ── -->
+<section class="hero" id="hero">
+  <div class="hero-rules">
+    <span></span><span></span><span></span>
+  </div>
+  <div class="hero-glow"></div>
+
+  <div class="wrap">
+    <div class="hero-content">
+      <div class="hero-eyebrow rv">
+        <i></i> İstanbul · Ataşehir · Premium Güzellik <i></i>
+      </div>
+      <h1 class="hero-h1 rv d1">
+        Güzelliğiniz<br>
+        <em>Bizimle</em><br>
+        Buluşsun
+      </h1>
+      <p class="hero-sub rv d2">
+        Profesyonel ekibimiz ve en yeni teknolojilerle, size özel güzellik deneyimi sunuyoruz. Her seans, kalıcı ve görünür sonuçlar.
+      </p>
+      <div class="hero-btns rv d3">
+        <a href="#iletisim" class="btn btn-gold"><span>Randevu Al</span></a>
+        <a href="#hizmetler" class="btn btn-ghost"><span>Hizmetlerimiz</span></a>
+      </div>
+    </div>
+  </div>
+
+  <div class="hero-stats">
+    <div class="hero-stat rv d2">
+      <div class="stat-n" data-count="500" data-suffix="+">500+</div>
+      <div class="stat-l">Mutlu Müşteri</div>
+    </div>
+    <div class="hero-stat rv d3">
+      <div class="stat-n" data-count="8" data-suffix="+">8+</div>
+      <div class="stat-l">Yıl Deneyim</div>
+    </div>
+    <div class="hero-stat rv d4">
+      <div class="stat-n" data-count="15" data-suffix="+">15+</div>
+      <div class="stat-l">Yıl Güzellik Hizmeti</div>
+    </div>
+  </div>
+
+  <div class="hero-scroll">
+    <span>Keşfet</span>
+    <div class="scroll-track"></div>
+  </div>
+</section>
+
+<!-- ── TICKER ── -->
+<div class="ticker">
+  <div class="ticker-track">
+    <span class="t-item">❄️ Buz Lazer Epilasyon<span class="t-sep"></span></span>
+    <span class="t-item">🌸 Cilt Bakımı &amp; Gençleştirme<span class="t-sep"></span></span>
+    <span class="t-item">💄 Kalıcı Makyaj &amp; Microblading<span class="t-sep"></span></span>
+    <span class="t-item">💅 Nail Art &amp; Manikür<span class="t-sep"></span></span>
+    <span class="t-item">✨ Cilt Gençleştirme<span class="t-sep"></span></span>
+    <span class="t-item">👁️ Kaş Tasarımı<span class="t-sep"></span></span>
+    <!-- duplicate for seamless loop -->
+    <span class="t-item">❄️ Buz Lazer Epilasyon<span class="t-sep"></span></span>
+    <span class="t-item">🌸 Cilt Bakımı &amp; Gençleştirme<span class="t-sep"></span></span>
+    <span class="t-item">💄 Kalıcı Makyaj &amp; Microblading<span class="t-sep"></span></span>
+    <span class="t-item">💅 Nail Art &amp; Manikür<span class="t-sep"></span></span>
+    <span class="t-item">✨ Cilt Gençleştirme<span class="t-sep"></span></span>
+    <span class="t-item">👁️ Kaş Tasarımı<span class="t-sep"></span></span>
+  </div>
+</div>
+
+<!-- ── SERVICES ── -->
+<section class="services" id="hizmetler">
+  <div class="wrap">
+    <div class="svc-hd">
+      <div class="svc-hd-l">
+        <div class="label rv">Hizmetlerimiz</div>
+        <h2 class="svc-h2 rv d1">Güzelliğin<br><em>Her Boyutu</em></h2>
+      </div>
+      <p class="svc-note rv d2">En son teknoloji ve sertifikalı uzmanlarımızla, ihtiyacınıza özel güzellik çözümleri sunuyoruz.</p>
+    </div>
+
+    <div class="svc-grid">
+      <div class="svc-card rv">
+        <div class="svc-num">01</div>
+        <div class="svc-ico">🌸</div>
+        <h3 class="svc-name">Cilt Bakımı</h3>
+        <p class="svc-desc">Derin temizleme, nemlendirme ve yenileme işlemleriyle cildinizi arındırıyor, gençliğinizi geri kazandırıyoruz.</p>
+        <div class="svc-arrow">Detaylı Bilgi <span class="svc-arrow-line"></span></div>
+      </div>
+
+      <div class="svc-card rv d1">
+        <div class="svc-num">02</div>
+        <div class="svc-ico">❄️</div>
+        <h3 class="svc-name">Lazer Epilasyon</h3>
+        <p class="svc-desc">Buz lazer teknolojisiyle acısız ve kalıcı epilasyon. En hassas cilt tipine bile uygun, güvenli uygulama.</p>
+        <div class="svc-arrow">Detaylı Bilgi <span class="svc-arrow-line"></span></div>
+      </div>
+
+      <div class="svc-card rv d2">
+        <div class="svc-num">03</div>
+        <div class="svc-ico">👁️</div>
+        <h3 class="svc-name">Kaş Microblading</h3>
+        <p class="svc-desc">Yüz hatlarınıza uygun, doğal görünümlü kaş tasarımı. Kalıcı sonuçlar, profesyonel uygulama.</p>
+        <div class="svc-arrow">Detaylı Bilgi <span class="svc-arrow-line"></span></div>
+      </div>
+
+      <div class="svc-card rv d3">
+        <div class="svc-num">04</div>
+        <div class="svc-ico">💅</div>
+        <h3 class="svc-name">Nail Art &amp; Manikür</h3>
+        <p class="svc-desc">Yaratıcı tasarımlar ve özenli bakımla ellerinizi güzelleştiriyoruz. Kalıcı oje ve nail art uygulamaları.</p>
+        <div class="svc-arrow">Detaylı Bilgi <span class="svc-arrow-line"></span></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ── ABOUT ── -->
+<section class="about" id="hakkimizda">
+  <div class="about-watermark">GÜZELLIK</div>
+  <div class="wrap">
+    <div class="about-in">
+      <div class="rv">
+        <div class="about-img-wrap">
+          <img src="images/Salon picture.png" alt="Buket Sağır Güzellik Merkezi Salonu" loading="lazy">
+          <div class="about-badge">
+            <div class="badge-n">8+</div>
+            <div class="badge-l">Yıl<br>Deneyim</div>
+          </div>
+        </div>
+      </div>
+
+      <div>
+        <div class="label rv">Hakkımızda</div>
+        <h2 class="about-h2 rv d1">Güzelliğe<br><em>Adanmış</em><br>Bir Merkez</h2>
+        <p class="about-p rv d2">
+          Buket Sağır Güzellik Merkezi olarak, İstanbul Ataşehir'de 8 yılı aşkın süredir müşterilerimize en kaliteli güzellik hizmetini sunuyoruz.
+        </p>
+        <p class="about-p rv d3">
+          Sertifikalı uzmanlarımız, son teknoloji cihazlarımız ve premium ürünlerimizle her müşterimize özel, kişiselleştirilmiş deneyimler yaratıyoruz.
+        </p>
+
+        <div class="feat-grid rv d4">
+          <div class="feat">
+            <div class="feat-ico">🏆</div>
+            <div class="feat-name">Sertifikalı Uzmanlar</div>
+            <div class="feat-desc">Alanında uzman, sertifikalı güzellik danışmanları</div>
+          </div>
+          <div class="feat">
+            <div class="feat-ico">✨</div>
+            <div class="feat-name">Premium Ürünler</div>
+            <div class="feat-desc">Dünyaca tanınmış markaların kaliteli ürünleri</div>
+          </div>
+          <div class="feat">
+            <div class="feat-ico">🛡️</div>
+            <div class="feat-name">Hijyen Güvencesi</div>
+            <div class="feat-desc">Steril ekipman ve titiz hijyen standartları</div>
+          </div>
+          <div class="feat">
+            <div class="feat-ico">💝</div>
+            <div class="feat-name">Kişisel İlgi</div>
+            <div class="feat-desc">Her müşteriye özel, birebir kişiselleştirilmiş bakım</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ── PROCESS ── -->
+<section class="process">
+  <div class="wrap">
+    <div class="proc-hd">
+      <div class="label rv" style="justify-content:center;">Nasıl Çalışır?</div>
+      <h2 class="proc-h2 rv d1">Randevu <em>Süreci</em></h2>
+      <p class="proc-sub rv d2">Güzelliğe giden yolunuz dört basit adımda</p>
+    </div>
+
+    <div class="proc-steps">
+      <div class="proc-step rv">
+        <div class="step-num">01</div>
+        <h3 class="step-title">İletişime Geç</h3>
+        <p class="step-desc">Telefon, WhatsApp veya web formumuz üzerinden bizimle iletişime geçin.</p>
+      </div>
+      <div class="proc-step rv d1">
+        <div class="step-num">02</div>
+        <h3 class="step-title">Danışma Seansı</h3>
+        <p class="step-desc">Uzmanımız ihtiyaçlarınızı dinler ve size en uygun hizmeti önerir.</p>
+      </div>
+      <div class="proc-step rv d2">
+        <div class="step-num">03</div>
+        <h3 class="step-title">Hizmet Uygulaması</h3>
+        <p class="step-desc">Rezervasyonunuzu oluşturun ve profesyonel bakımınızın keyfini çıkarın.</p>
+      </div>
+      <div class="proc-step rv d3">
+        <div class="step-num">04</div>
+        <h3 class="step-title">Sonuç &amp; Takip</h3>
+        <p class="step-desc">Uzun süreli memnuniyetiniz için bakım sonrası destek sağlıyoruz.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ── TESTIMONIALS ── -->
+<section class="testi" id="yorumlar">
+  <div class="wrap">
+    <div class="testi-hd">
+      <div>
+        <div class="label rv">Müşteri Yorumları</div>
+        <h2 class="testi-h2 rv d1">Onlar Ne<br>Düşünüyor?</h2>
+      </div>
+      <div class="testi-count rv d2">500'den fazla mutlu müşterimizin deneyimlerinden bir kesit</div>
+    </div>
+
+    <div class="testi-grid">
+      <div class="t-card rv">
+        <div class="t-quote">&ldquo;</div>
+        <p class="t-body">Kaş microblading işlemimden son derece memnun kaldım. Yüz hatlarıma çok uygun, doğal bir sonuç elde ettim. Artık sabahları makyaj yapmak zorunda kalmıyorum!</p>
+        <div class="t-stars">
+          <span>★</span><span>★</span><span>★</span><span>★</span><span>★</span>
+        </div>
+        <div class="t-auth">
+          <div class="t-av">Z</div>
+          <div>
+            <div class="t-name">Zeynep K.</div>
+            <div class="t-svc">Kaş Microblading</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="t-card rv d1">
+        <div class="t-quote">&ldquo;</div>
+        <p class="t-body">Yıllarca tüy sorunuyla boğuştum. Buket Hanım ve ekibi sayesinde buz lazer epilasyonla kalıcı çözüme kavuştum. Uygulama boyunca hiç acı hissetmedim.</p>
+        <div class="t-stars">
+          <span>★</span><span>★</span><span>★</span><span>★</span><span>★</span>
+        </div>
+        <div class="t-auth">
+          <div class="t-av">A</div>
+          <div>
+            <div class="t-name">Ayşe M.</div>
+            <div class="t-svc">Lazer Epilasyon</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="t-card rv d2">
+        <div class="t-quote">&ldquo;</div>
+        <p class="t-body">Cilt bakımı seanslarından sonra inanılmaz bir değişim yaşadım. Cildim gerçekten gençleşti ve parlandı. Artık düzenli müşterileriyim!</p>
+        <div class="t-stars">
+          <span>★</span><span>★</span><span>★</span><span>★</span><span>★</span>
+        </div>
+        <div class="t-auth">
+          <div class="t-av">E</div>
+          <div>
+            <div class="t-name">Elif T.</div>
+            <div class="t-svc">Cilt Bakımı</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ── GALLERY ── -->
+<section class="gallery" id="galeri">
+  <div class="wrap">
+    <div class="gal-hd">
+      <div class="label rv" style="color:rgba(232,131,109,.7);justify-content:center;">Instagram</div>
+      <h2 class="gal-h2 rv d1">@buketsagirguzellik</h2>
+      <p class="gal-sub rv d2">Bizi sosyal medyada takip edin</p>
+    </div>
+  </div>
+
+  <div class="gal-grid">
+    <div class="gal-item rv">
+      <img src="images/cilt bakimi.png" alt="Cilt Bakımı" loading="lazy" style="object-position:center 70%;">
+      <div class="gal-cap"><span class="gal-cap-txt">Cilt Bakımı</span></div>
+      <div class="gal-ov">♥</div>
+    </div>
+    <div class="gal-item rv d1">
+      <img src="images/nail_art.png" alt="Nail Art" loading="lazy" style="object-position:center center;">
+      <div class="gal-cap"><span class="gal-cap-txt">Nail Art &amp; Manikür</span></div>
+      <div class="gal-ov">♥</div>
+    </div>
+    <div class="gal-item rv d2">
+      <img src="images/microblading.png" alt="Kalıcı Makyaj" loading="lazy" style="object-position:center 70%;">
+      <div class="gal-cap"><span class="gal-cap-txt">Kalıcı Makyaj</span></div>
+      <div class="gal-ov">♥</div>
+    </div>
+    <div class="gal-item rv d3">
+      <img src="images/kalici makyaj.png" alt="Kaş Microblading" loading="lazy" style="object-position:center 82%;">
+      <div class="gal-cap"><span class="gal-cap-txt">Kaş Microblading</span></div>
+      <div class="gal-ov">♥</div>
+    </div>
+    <div class="gal-item rv d4">
+      <img src="images/laser.png" alt="Lazer Epilasyon" loading="lazy" style="object-position:center 60%;">
+      <div class="gal-cap"><span class="gal-cap-txt">Lazer Epilasyon</span></div>
+      <div class="gal-ov">♥</div>
+    </div>
+    <div class="gal-item rv d5">
+      <img src="images/Salon picture.png" alt="Salonumuz" loading="lazy" style="object-position:center center;">
+      <div class="gal-cap"><span class="gal-cap-txt">Salonumuz</span></div>
+      <div class="gal-ov">♥</div>
+    </div>
+  </div>
+</section>
+
+<!-- ── CONTACT ── -->
+<section class="contact" id="iletisim">
+  <div class="wrap">
+    <div class="contact-in">
+      <div>
+        <div class="label rv">İletişim</div>
+        <h2 class="con-h2 rv d1">Güzelliğe<br><em>Adım At</em></h2>
+        <p class="con-sub rv d2">Randevu almak veya hizmetlerimiz hakkında bilgi almak için bizimle iletişime geçin.</p>
+
+        <div class="con-details rv d3">
+          <div class="con-row">
+            <div class="con-ico">📞</div>
+            <div>
+              <div class="con-lbl">Telefon</div>
+              <div class="con-val">+90 532 000 00 00</div>
+            </div>
+          </div>
+          <div class="con-row">
+            <div class="con-ico">✉️</div>
+            <div>
+              <div class="con-lbl">E-posta</div>
+              <div class="con-val">info@buketsagirguzellik.com</div>
+            </div>
+          </div>
+          <div class="con-row">
+            <div class="con-ico">📍</div>
+            <div>
+              <div class="con-lbl">Adres</div>
+              <div class="con-val">Ataşehir, İstanbul</div>
+            </div>
+          </div>
+          <div class="con-row">
+            <div class="con-ico">🕐</div>
+            <div>
+              <div class="con-lbl">Çalışma Saatleri</div>
+              <div class="con-val">Hft – Cmt: 09:00 – 20:00</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="map-ph rv d4">
+          <span>📍</span><span>Ataşehir, İstanbul</span>
+        </div>
+      </div>
+
+      <div class="con-form rv d2">
+        <h3 class="con-form-title">Randevu Talebi</h3>
+
+        <div class="f-ok" id="fOk">
+          <div class="f-ok-ico">✅</div>
+          <div class="f-ok-title">Talebiniz Alındı!</div>
+          <div class="f-ok-text">En kısa sürede sizinle iletişime geçeceğiz.</div>
+        </div>
+
+        <form id="form" onsubmit="submitForm(event)">
+          <div class="f-row">
+            <div class="f-grp">
+              <label class="f-lbl">Ad</label>
+              <input class="f-inp" type="text" placeholder="Adınız" required>
+            </div>
+            <div class="f-grp">
+              <label class="f-lbl">Soyad</label>
+              <input class="f-inp" type="text" placeholder="Soyadınız" required>
+            </div>
+          </div>
+          <div class="f-grp">
+            <label class="f-lbl">Telefon</label>
+            <input class="f-inp" type="tel" placeholder="+90 5XX XXX XX XX" required>
+          </div>
+          <div class="f-grp">
+            <label class="f-lbl">Hizmet Seçin</label>
+            <select class="f-sel" required>
+              <option value="" disabled selected>Hizmet seçin…</option>
+              <option>Cilt Bakımı</option>
+              <option>Lazer Epilasyon</option>
+              <option>Kaş Microblading</option>
+              <option>Nail Art &amp; Manikür</option>
+              <option>Kalıcı Makyaj</option>
+              <option>Diğer</option>
+            </select>
+          </div>
+          <div class="f-grp">
+            <label class="f-lbl">Mesaj (İsteğe Bağlı)</label>
+            <textarea class="f-ta" placeholder="Eklemek istediğiniz bir şey var mı?"></textarea>
+          </div>
+          <button type="submit" class="f-sub"><span>Randevu Talebi Gönder</span></button>
+        </form>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ── FOOTER ── -->
+<footer>
+  <div class="wrap">
+    <div class="ft-top">
+      <div>
+        <div class="ft-logo">
+          <div class="ft-logo-em">B</div>
+          <div class="ft-logo-name">Buket Sağır</div>
+        </div>
+        <p class="ft-desc">İstanbul Ataşehir'de 8 yılı aşkın süredir güzellik hizmeti sunuyoruz. Profesyonel ekibimiz ve premium ürünlerimizle yanınızdayız.</p>
+        <div class="ft-soc">
+          <a href="#" aria-label="Instagram">📷</a>
+          <a href="#" aria-label="Facebook">📘</a>
+          <a href="#" aria-label="WhatsApp">💬</a>
+        </div>
+      </div>
+
+      <div>
+        <div class="ft-col-ttl">Hizmetler</div>
+        <ul class="ft-ul">
+          <li><a href="#hizmetler">Cilt Bakımı</a></li>
+          <li><a href="#hizmetler">Lazer Epilasyon</a></li>
+          <li><a href="#hizmetler">Kaş Microblading</a></li>
+          <li><a href="#hizmetler">Nail Art &amp; Manikür</a></li>
+          <li><a href="#hizmetler">Kalıcı Makyaj</a></li>
+        </ul>
+      </div>
+
+      <div>
+        <div class="ft-col-ttl">Hızlı Erişim</div>
+        <ul class="ft-ul">
+          <li><a href="#hero">Ana Sayfa</a></li>
+          <li><a href="#hakkimizda">Hakkımızda</a></li>
+          <li><a href="#yorumlar">Yorumlar</a></li>
+          <li><a href="#galeri">Galeri</a></li>
+          <li><a href="#iletisim">İletişim</a></li>
+        </ul>
+      </div>
+
+      <div>
+        <div class="ft-col-ttl">İletişim</div>
+        <div class="ft-ci"><span class="ft-ci-ico">📞</span><span class="ft-ci-tx">+90 532 000 00 00</span></div>
+        <div class="ft-ci"><span class="ft-ci-ico">✉️</span><span class="ft-ci-tx">info@buketsagirguzellik.com</span></div>
+        <div class="ft-ci"><span class="ft-ci-ico">📍</span><span class="ft-ci-tx">Ataşehir, İstanbul</span></div>
+        <div class="ft-ci"><span class="ft-ci-ico">🕐</span><span class="ft-ci-tx">Hft–Cmt: 09:00–20:00</span></div>
+      </div>
+    </div>
+
+    <div class="ft-bot">
+      <span>© 2025 Buket Sağır Güzellik Merkezi · Tüm hakları saklıdır.</span>
+      <span>Made with ♥ in İstanbul</span>
+    </div>
+  </div>
+</footer>
+
+<!-- ── STICKY BAR ── -->
+<div class="sticky-bar" id="stickyBar">
+  <div class="sb-l">
+    <span class="sb-badge">Fırsat</span>
+    <span class="sb-msg">İlk seansta %20 indirim · Hemen randevu alın</span>
+  </div>
+  <div class="sb-r">
+    <a href="#iletisim" class="sb-btn">Randevu Al</a>
+    <button class="sb-x" onclick="document.getElementById('stickyBar').style.display='none'">✕</button>
+  </div>
+</div>
+
+<!-- Scripts -->
+<script src="js/cursor.js" defer></script>
+<script src="js/nav.js" defer></script>
+<script src="js/reveal.js" defer></script>
+<script src="js/counter.js" defer></script>
+<script src="js/form.js" defer></script>
+
+</body>
+</html>

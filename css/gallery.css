@@ -1,0 +1,52 @@
+/* ============================================================
+   GALLERY
+   ============================================================ */
+.gallery { padding:110px 0; background:var(--black); }
+
+.gal-hd { text-align:center; margin-bottom:56px; }
+.gal-h2 {
+  font-family:var(--f-disp); font-size:clamp(38px,4vw,56px);
+  font-weight:900; color:#fff; letter-spacing:-.025em; margin-top:12px; margin-bottom:10px;
+}
+.gal-sub { font-size:13px; color:rgba(232,131,109,.7); letter-spacing:.1em; }
+
+.gal-grid {
+  display:grid; grid-template-columns:repeat(6,1fr); gap:3px;
+}
+.gal-item {
+  aspect-ratio:1; background:#18100c;
+  position:relative; overflow:hidden;
+}
+
+/* Subtly angled at rest, snap on hover */
+.gal-item img {
+  width:100%; height:100%;
+  object-fit:cover; display:block;
+  transition:transform .6s var(--ease);
+}
+.gal-item:nth-child(odd)  img { transform:scale(1.08) rotate( 1.2deg); }
+.gal-item:nth-child(even) img { transform:scale(1.08) rotate(-1.2deg); }
+.gal-item:hover img            { transform:scale(1.14) rotate(0deg); }
+
+/* Bottom caption gradient */
+.gal-cap {
+  position:absolute; bottom:0; left:0; right:0;
+  padding:32px 14px 12px;
+  background:linear-gradient(to top, rgba(10,8,6,.72), transparent);
+  transition:opacity .3s;
+}
+.gal-cap-txt {
+  font-size:9px; letter-spacing:.18em; text-transform:uppercase;
+  color:rgba(255,255,255,.78); font-weight:500; display:block;
+}
+.gal-item:hover .gal-cap { opacity:0; }
+
+/* Salmon hover overlay */
+.gal-ov {
+  position:absolute; inset:0;
+  background:rgba(232,131,109,.72);
+  display:flex; align-items:center; justify-content:center;
+  font-size:28px; color:#fff; opacity:0;
+  transition:opacity .3s var(--ease);
+}
+.gal-item:hover .gal-ov { opacity:1; }

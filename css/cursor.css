@@ -1,0 +1,16 @@
+/* ============================================================
+   CUSTOM CURSOR
+   ============================================================ */
+#cur-dot, #cur-ring {
+  position:fixed; pointer-events:none; z-index:9999;
+  border-radius:50%; transform:translate(-50%,-50%);
+}
+#cur-dot  { width:7px; height:7px; background:var(--gold); transition:transform .12s var(--ease); }
+#cur-ring {
+  width:36px; height:36px;
+  border:1.5px solid rgba(232,131,109,.55);
+  transition:width .22s var(--ease), height .22s var(--ease),
+             border-color .22s var(--ease), opacity .22s;
+}
+body.hovering #cur-dot  { transform:translate(-50%,-50%) scale(2.2); background:var(--gold-dk); }
+body.hovering #cur-ring { width:56px; height:56px; border-color:rgba(232,131,109,.25); }
