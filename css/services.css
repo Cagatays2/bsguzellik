@@ -80,13 +80,15 @@
 }
 
 .svc-ico {
-  width:52px; height:52px; border-radius:50%;
-  border:1px solid var(--border);
-  display:flex; align-items:center; justify-content:center;
-  font-size:22px; margin-bottom:24px;
-  transition:border-color .4s, background .4s;
+  width:100%; aspect-ratio:1;
+  overflow:hidden; margin-bottom:24px;
+  border-radius:2px; background:var(--gold-lt);
 }
-.svc-card:hover .svc-ico { border-color:rgba(255,255,255,.15); background:rgba(255,255,255,.04); }
+.svc-ico img {
+  width:100%; height:100%; object-fit:cover; display:block;
+  transition:transform .52s var(--ease);
+}
+.svc-card:hover .svc-ico img { transform:scale(1.06); }
 
 .svc-name {
   font-family:var(--f-disp); font-size:21px; font-weight:700;
