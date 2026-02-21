@@ -9,6 +9,8 @@
   font-weight:900; color:#fff; letter-spacing:-.025em; margin-top:12px; margin-bottom:10px;
 }
 .gal-sub { font-size:13px; color:rgba(232,131,109,.7); letter-spacing:.1em; }
+.gal-h2 a { color:inherit; border-bottom:2px solid transparent; transition:border-color .25s; }
+.gal-h2 a:hover { border-color:var(--gold); }
 
 .gal-grid {
   display:grid; grid-template-columns:repeat(6,1fr); gap:3px;
