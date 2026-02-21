@@ -81,8 +81,22 @@
 .f-sub:hover::before { transform:translateX(0); }
 .f-sub span { position:relative; z-index:1; }
 
-.f-ok { display:none; text-align:center; padding:28px 0; }
+.f-ok { display:none; text-align:center; padding:48px 24px; }
 .f-ok.show { display:block; }
-.f-ok-ico { font-size:36px; margin-bottom:12px; }
-.f-ok-title { font-family:var(--f-disp); font-size:20px; color:var(--text); margin-bottom:6px; }
-.f-ok-text  { font-size:13px; color:var(--muted); }
+.f-ok-check {
+  width:68px; height:68px; border-radius:50%;
+  background:var(--gold);
+  display:flex; align-items:center; justify-content:center;
+  margin:0 auto 22px;
+  box-shadow:0 8px 28px rgba(232,131,109,.32);
+}
+.f-ok-check svg { width:28px; height:28px; }
+.f-ok-title {
+  font-family:var(--f-disp); font-size:26px; font-weight:700;
+  color:var(--text); letter-spacing:-.02em; margin-bottom:12px;
+}
+.f-ok-wa {
+  font-size:13px; color:var(--gold); font-weight:500;
+  margin-bottom:8px; letter-spacing:.01em;
+}
+.f-ok-text { font-size:13px; color:var(--muted); line-height:1.65; }

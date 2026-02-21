@@ -430,9 +430,14 @@
         <h3 class="con-form-title">Randevu Talebi</h3>
 
         <div class="f-ok" id="fOk">
-          <div class="f-ok-ico">✅</div>
+          <div class="f-ok-check">
+            <svg viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+              <polyline points="20 6 9 17 4 12"/>
+            </svg>
+          </div>
           <div class="f-ok-title">Talebiniz Alındı!</div>
-          <div class="f-ok-text">En kısa sürede sizinle iletişime geçeceğiz.</div>
+          <p class="f-ok-wa">WhatsApp açılıyor — mesajı göndererek randevunuzu tamamlayın.</p>
+          <p class="f-ok-text">Kısa süre içinde sizinle iletişime geçeceğiz.</p>
         </div>
 
         <form id="form" onsubmit="submitForm(event)">
@@ -464,7 +469,7 @@
           </div>
           <div class="f-grp">
             <label class="f-lbl">Mesaj (İsteğe Bağlı)</label>
-            <textarea id="f-msg" class="f-ta" placeholder="Eklemek istediğiniz bir şey var mı?"></textarea>
+            <textarea id="f-msg" class="f-ta" placeholder="Eklemek istediğiniz bir şey var mı? Müsaitlik sormak istediğiniz belirli bir gün veya saat varsa belirtebilirsiniz."></textarea>
           </div>
           <button type="submit" class="f-sub"><span>Randevu Talebi Gönder</span></button>
         </form>
