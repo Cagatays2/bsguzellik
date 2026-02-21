@@ -11,12 +11,13 @@
   font-family:var(--f-disp); font-size:clamp(100px,14vw,200px);
   font-weight:900; color:rgba(28,21,18,.03);
   pointer-events:none; user-select:none; letter-spacing:-.04em;
-  white-space:nowrap;
+  white-space:nowrap; z-index:0;
 }
 
 .about-in {
   display:grid; grid-template-columns:1fr 1fr;
   gap:90px; align-items:center;
+  position:relative; z-index:1;
 }
 
 /* Image panel */
