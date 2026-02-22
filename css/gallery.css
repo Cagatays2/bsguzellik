@@ -52,3 +52,8 @@
   transition:opacity .3s var(--ease);
 }
 .gal-item:hover .gal-ov { opacity:1; }
+
+/* Per-item image crop positions */
+.gal-item.pos-60 img { object-position:center 60%; }
+.gal-item.pos-70 img { object-position:center 70%; }
+.gal-item.pos-85 img { object-position:center 85%; }

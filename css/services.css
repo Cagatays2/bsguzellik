@@ -124,3 +124,7 @@
 .svc-card:hover .svc-arrow { color:#fff; gap:14px; }
 .svc-card:hover .svc-arrow-line { width:36px; background:#fff; }
 .svc-card:hover .svc-arrow-line::after { border-color:#fff; }
+
+/* Per-card image crop positions */
+.svc-ico.pos-55 img { object-position:center 55%; }
+.svc-ico.pos-70 img { object-position:center 70%; }

@@ -132,6 +132,14 @@
 .hz-cta-txt em { font-style:italic; color:var(--gold); }
 .hz-cta-sub { font-size:13px; color:rgba(255,255,255,.38); margin-top:6px; }
 
+/* Per-card image crop positions (desktop only — mobile defaults to center) */
+@media (min-width:769px) {
+  .hz-card-img.pos-50 img { object-position:center 50%; }
+  .hz-card-img.pos-65 img { object-position:center 65%; }
+  .hz-card-img.pos-70 img { object-position:center 70%; }
+  .hz-card-img.pos-80 img { object-position:center 80%; }
+}
+
 /* Responsive */
 @media (max-width:1100px) {
   .hz-grid { grid-template-columns:repeat(2,1fr); }
@@ -159,7 +167,7 @@
     width:100%; margin:0 0 10px;
     aspect-ratio:3/4; overflow:hidden;
   }
-  .hz-card-img img { object-position:center center; transform:none !important; }
+  .hz-card-img img { transform:none; } /* disable hover zoom on touch */
   .hz-card-name { font-size:13px; margin-bottom:4px; }
   .hz-card-desc { display:none; }
   .hz-hide-mobile { display:none; }
