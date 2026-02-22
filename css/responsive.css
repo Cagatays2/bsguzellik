@@ -21,6 +21,7 @@
   .hero-stats { display:none; }
   .hero-rules span:nth-child(1),
   .hero-rules span:nth-child(3) { display:none; }
+  .hero-content { background:#fff; }
 
   .svc-grid   { grid-template-columns:1fr; }
   .svc-hd     { flex-direction:column; align-items:flex-start; }
