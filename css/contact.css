@@ -34,14 +34,17 @@
 .con-val { font-size:14px; color:var(--text); }
 
 .map-ph {
-  margin-top:22px; height:180px;
+  margin-top:22px; height:200px;
   display:block; border-radius:2px;
-  overflow:hidden; border:1.5px solid var(--text);
+  overflow:hidden; border:1px solid var(--border);
 }
 .map-ph iframe {
   width:100%; height:100%; border:0;
   display:block; pointer-events:none;
+  filter:grayscale(1) sepia(.18) contrast(1.05);
+  transition:filter .45s var(--ease);
 }
+.map-ph:hover iframe { filter:none; }
 
 /* Form */
 .con-form {
