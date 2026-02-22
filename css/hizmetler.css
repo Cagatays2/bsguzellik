@@ -138,14 +138,20 @@
 }
 @media (max-width:768px) {
   .hz-hero  { padding:130px 0 64px; }
-  .hz-grid  { grid-template-columns:repeat(3,1fr); gap:8px; }
+  .hz-grid  {
+    grid-template-columns:repeat(3,40vw);
+    overflow-x:auto; scroll-snap-type:x mandatory;
+    -webkit-overflow-scrolling:touch; touch-action:pan-x;
+    scrollbar-width:none; padding-bottom:4px; gap:10px;
+  }
+  .hz-grid::-webkit-scrollbar { display:none; }
   .hz-body  { padding:60px 0 80px; }
   .hz-category { margin-bottom:56px; }
   .hz-cta   { flex-direction:column; align-items:flex-start; padding:36px 28px; }
   .hz-cat-count { display:none; }
-  .hz-card  { padding:20px 10px 14px; }
-  .hz-card-img { width:calc(100% + 20px); margin:-20px -10px 16px; }
-  .hz-card-name { font-size:12px; margin-bottom:6px; }
-  .hz-card-desc { font-size:10px; line-height:1.5; }
+  .hz-card  { padding:20px 14px 16px; scroll-snap-align:start; touch-action:pan-x; }
+  .hz-card-img { width:calc(100% + 28px); margin:-20px -14px 16px; }
+  .hz-card-name { font-size:13px; margin-bottom:6px; }
+  .hz-card-desc { font-size:11px; line-height:1.5; }
   .hz-hide-mobile { display:none; }
 }
