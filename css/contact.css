@@ -34,11 +34,13 @@
 .con-val { font-size:14px; color:var(--text); }
 
 .map-ph {
-  margin-top:22px; height:150px;
-  background:linear-gradient(135deg,#e9e2d8,#d8cfc3);
-  border-radius:2px; display:flex; align-items:center;
-  justify-content:center; gap:10px;
-  font-size:13px; color:var(--muted); letter-spacing:.07em;
+  margin-top:22px; height:180px;
+  display:block; border-radius:2px;
+  overflow:hidden; border:1.5px solid var(--text);
+}
+.map-ph iframe {
+  width:100%; height:100%; border:0;
+  display:block; pointer-events:none;
 }
 
 /* Form */
