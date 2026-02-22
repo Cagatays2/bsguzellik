@@ -139,8 +139,7 @@
 @media (max-width:768px) {
   .hz-hero  { padding:130px 0 64px; }
   .hz-grid  {
-    grid-template-columns:repeat(3,40vw);
-    overflow-x:auto; scroll-snap-type:x mandatory;
+    display:flex; overflow-x:auto; scroll-snap-type:x mandatory;
     -webkit-overflow-scrolling:touch; touch-action:pan-x;
     scrollbar-width:none; padding-bottom:4px; gap:10px;
   }
@@ -149,9 +148,19 @@
   .hz-category { margin-bottom:56px; }
   .hz-cta   { flex-direction:column; align-items:flex-start; padding:36px 28px; }
   .hz-cat-count { display:none; }
-  .hz-card  { padding:12px 12px 14px; scroll-snap-align:start; touch-action:pan-x; }
-  .hz-card-img { width:100%; margin:0 0 12px; }
-  .hz-card-name { font-size:13px; margin-bottom:6px; }
-  .hz-card-desc { font-size:11px; line-height:1.5; }
+  .hz-card  {
+    flex:0 0 44vw; min-width:0;
+    padding:10px 10px 14px;
+    scroll-snap-align:start; touch-action:pan-x;
+    overflow:visible;
+  }
+  .hz-card::before { display:none; }
+  .hz-card-img {
+    width:100%; margin:0 0 10px;
+    aspect-ratio:3/4; overflow:hidden;
+  }
+  .hz-card-img img { object-position:center center; transform:none !important; }
+  .hz-card-name { font-size:13px; margin-bottom:4px; }
+  .hz-card-desc { display:none; }
   .hz-hide-mobile { display:none; }
 }
