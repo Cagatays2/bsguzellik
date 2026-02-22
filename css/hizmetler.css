@@ -95,6 +95,16 @@
 }
 .hz-card:hover .hz-card-ico { border-color:rgba(255,255,255,.2); }
 
+.hz-card-img {
+  width:calc(100% + 56px); margin:-36px -28px 22px;
+  aspect-ratio:4/3; overflow:hidden; background:var(--gold-lt);
+}
+.hz-card-img img {
+  width:100%; height:100%; object-fit:cover; display:block;
+  transition:transform .52s var(--ease);
+}
+.hz-card:hover .hz-card-img img { transform:scale(1.06); }
+
 .hz-card-name {
   font-family:var(--f-disp); font-size:18px; font-weight:700;
   color:var(--text); line-height:1.2; margin-bottom:10px;
