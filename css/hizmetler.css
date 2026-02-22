@@ -138,9 +138,14 @@
 }
 @media (max-width:768px) {
   .hz-hero  { padding:130px 0 64px; }
-  .hz-grid  { grid-template-columns:1fr; }
+  .hz-grid  { grid-template-columns:repeat(3,1fr); gap:8px; }
   .hz-body  { padding:60px 0 80px; }
   .hz-category { margin-bottom:56px; }
   .hz-cta   { flex-direction:column; align-items:flex-start; padding:36px 28px; }
   .hz-cat-count { display:none; }
+  .hz-card  { padding:20px 10px 14px; }
+  .hz-card-img { width:calc(100% + 20px); margin:-20px -10px 16px; }
+  .hz-card-name { font-size:12px; margin-bottom:6px; }
+  .hz-card-desc { font-size:10px; line-height:1.5; }
+  .hz-hide-mobile { display:none; }
 }
