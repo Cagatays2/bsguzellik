@@ -15,3 +15,19 @@ revEls.forEach(el => revObs.observe(el));
 document.querySelectorAll('.hero .rv').forEach((el, i) =>
   setTimeout(() => el.classList.add('on'), 180 + i * 90)
 );
+
+/* ── HERO GLOW PARALLAX ── */
+const heroGlow = document.querySelector('.hero-glow');
+if (heroGlow) {
+  let ticking = false;
+  window.addEventListener('scroll', () => {
+    if (!ticking) {
+      requestAnimationFrame(() => {
+        const y = window.scrollY * 0.35;
+        heroGlow.style.transform = `translateY(${y}px)`;
+        ticking = false;
+      });
+      ticking = true;
+    }
+  });
+}

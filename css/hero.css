@@ -7,27 +7,14 @@
   background:#fff; overflow:hidden;
 }
 
-/* Vertical rule lines */
-.hero-rules {
-  position:absolute; inset:0; pointer-events:none;
-}
-.hero-rules span {
-  position:absolute; top:0; bottom:0; width:1px;
-  background:linear-gradient(to bottom,
-    transparent 0%, rgba(232,131,109,.35) 25%,
-    rgba(232,131,109,.35) 75%, transparent 100%);
-}
-.hero-rules span:nth-child(1) { left:25%; }
-.hero-rules span:nth-child(2) { left:50%; }
-.hero-rules span:nth-child(3) { left:75%; }
-
-/* Ambient glow */
+/* Ambient glow — shifts on scroll via JS */
 .hero-glow {
-  position:absolute; inset:0; pointer-events:none;
+  position:absolute; inset:-30%; pointer-events:none;
+  will-change:transform;
   background:
-    radial-gradient(ellipse 65% 70% at 90% 50%,  rgba(232,131,109,.20) 0%, transparent 60%),
-    radial-gradient(ellipse 45% 55% at 10% 85%,  rgba(232,131,109,.12) 0%, transparent 55%),
-    radial-gradient(ellipse 55% 40% at 50% 0%,   rgba(249,221,214,.50) 0%, transparent 65%);
+    radial-gradient(ellipse 65% 70% at 90% 50%,  rgba(232,131,109,.22) 0%, transparent 60%),
+    radial-gradient(ellipse 45% 55% at 10% 85%,  rgba(232,131,109,.14) 0%, transparent 55%),
+    radial-gradient(ellipse 55% 40% at 50% 0%,   rgba(249,221,214,.55) 0%, transparent 65%);
 }
 
 .hero-content {
