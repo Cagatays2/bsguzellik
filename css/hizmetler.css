@@ -168,7 +168,7 @@
     aspect-ratio:3/4; overflow:hidden;
   }
   .hz-card-img img { transform:none; } /* disable hover zoom on touch */
-  .hz-card-img.mob-bottom img { object-position:center 80%; transform:scale(1.1); }
+  .hz-card-img.mob-bottom img { object-position:center 100%; transform:scale(1.2); }
   .hz-card-name { font-size:13px; margin-bottom:4px; }
   .hz-card-desc { display:none; }
   .hz-hide-mobile { display:none; }
